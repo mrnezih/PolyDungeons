@@ -34,8 +34,8 @@ public class Movement : MonoBehaviour
             _anim.SetBool("Run", false);
         }
 
-
-        if (Input.GetKey(KeyCode.LeftShift)) 
+        // mobile döndürülünce burasý deðiþecek
+        if (Input.GetKey(KeyCode.LeftShift ) & move != Vector3.zero) 
         {
             playerSpeed =8f;
 
