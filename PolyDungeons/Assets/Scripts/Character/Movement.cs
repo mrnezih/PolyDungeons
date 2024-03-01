@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private Animator _anim;
-    public float playerSpeed = 4f;
+    public float playerSpeed = 3f;
 
     private void Start()
     {
@@ -34,10 +34,10 @@ public class Movement : MonoBehaviour
             _anim.SetBool("Run", false);
         }
 
-
-        if (Input.GetKey(KeyCode.LeftShift)) 
+        // mobile döndürülünce burasý deðiþecek
+        if (Input.GetKey(KeyCode.LeftShift ) & move != Vector3.zero) 
         {
-            playerSpeed =8f;
+            controller.Move(move * Time.deltaTime * playerSpeed * 2f);
 
 
             _anim.SetBool("Run", true);
@@ -45,7 +45,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            playerSpeed = 4f;
+            controller.Move(move * Time.deltaTime * playerSpeed);
         }
         
         controller.Move(playerVelocity * Time.deltaTime);
