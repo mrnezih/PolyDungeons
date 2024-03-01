@@ -447,10 +447,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5588814675972522686}
-  - component: {fileID: 1754726150873990728}
   - component: {fileID: 1368287550108668501}
   - component: {fileID: 3932228234751269026}
   - component: {fileID: 2236241128917386107}
+  - component: {fileID: 1754726150873990728}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -480,19 +480,6 @@ Transform:
   - {fileID: 2834339906184302115}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1754726150873990728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425938299535847351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1beab96cc884f5949b1f8c43c9391d72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerSpeed: 4
 --- !u!54 &1368287550108668501
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -567,6 +554,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1754726150873990728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425938299535847351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1beab96cc884f5949b1f8c43c9391d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 4
 --- !u!1 &1457458615349977103
 GameObject:
   m_ObjectHideFlags: 0
