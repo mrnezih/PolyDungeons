@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private Animator _anim;
-    public float playerSpeed = 1f;
+    public float playerSpeed = 3f;
 
     private void Start()
     {
