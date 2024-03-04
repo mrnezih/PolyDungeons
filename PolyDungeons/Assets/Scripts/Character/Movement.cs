@@ -7,6 +7,9 @@ public class Movement : MonoBehaviour
 
     private CharacterController controller;
     private Vector3 playerVelocity;
+    private bool groundedPlayer;
+    private float gravityValue = -9.81f;
+
     private Animator _anim;
     public float playerSpeed = 3f;
 
@@ -18,8 +21,8 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        groundedPlayer = controller.isGrounded;
+        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
         controller.Move(move * Time.deltaTime * playerSpeed);
 
         if (move != Vector3.zero)
@@ -49,6 +52,7 @@ public class Movement : MonoBehaviour
         }
         
         controller.Move(playerVelocity * Time.deltaTime);
+        playerVelocity.y += gravityValue * Time.deltaTime;
     }
 }
 
