@@ -70,11 +70,11 @@ public class Skills : MonoBehaviour
 
         movement.playerSpeed = 0;
 
-
+        Buton3.SetActive(false);
         StartCoroutine(Waittttt());
         StartCoroutine(CharacterSwordWait());
         swordRain.SetActive(true);
-        Buton3.SetActive(false);
+        
     }
 
     IEnumerator Waittttt() 
