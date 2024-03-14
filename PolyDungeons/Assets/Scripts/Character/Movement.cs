@@ -7,22 +7,25 @@ public class Movement : MonoBehaviour
 
     private CharacterController controller;
     private Vector3 playerVelocity;
-    private bool groundedPlayer;
     private float gravityValue = -9.81f;
 
     private Animator _anim;
     public float playerSpeed = 3f;
+    
+    InputSystem inputSystem;
 
     private void Start()
     {
+        inputSystem = GetComponent<InputSystem>();
         controller = GetComponent<CharacterController>();
         _anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        groundedPlayer = controller.isGrounded;
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
+        
+
+        Vector3 move = new Vector3(inputSystem.HorizontalInput(), 0, inputSystem.VerticalInput());
         controller.Move(move * Time.deltaTime * playerSpeed);
 
         if (move != Vector3.zero)
