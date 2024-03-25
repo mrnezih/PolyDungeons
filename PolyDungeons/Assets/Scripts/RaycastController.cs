@@ -27,6 +27,7 @@ public class RaycastController : MonoBehaviour
            
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("týklanýyor");
             if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity,hitLayer))
             {
                 print(hit.collider.name);
