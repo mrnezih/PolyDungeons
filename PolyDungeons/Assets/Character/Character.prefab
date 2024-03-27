@@ -48872,6 +48872,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knight
       objectReference: {fileID: 0}
+    - target: {fileID: 1425938299535847351, guid: 8f5999c372e6bec40ae5c1c21f7c31f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3555427400670068299, guid: 8f5999c372e6bec40ae5c1c21f7c31f1,
         type: 3}
       propertyPath: swordRain
@@ -48895,12 +48900,12 @@ PrefabInstance:
     - target: {fileID: 5588814675972522686, guid: 8f5999c372e6bec40ae5c1c21f7c31f1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.6095243
+      value: 28.48
       objectReference: {fileID: 0}
     - target: {fileID: 5588814675972522686, guid: 8f5999c372e6bec40ae5c1c21f7c31f1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2122455
+      value: 16.4
       objectReference: {fileID: 0}
     - target: {fileID: 5588814675972522686, guid: 8f5999c372e6bec40ae5c1c21f7c31f1,
         type: 3}
@@ -48951,7 +48956,17 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4829616475686953206}
+    - targetCorrespondingSourceObject: {fileID: 1425938299535847351, guid: 8f5999c372e6bec40ae5c1c21f7c31f1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2555886898823855978}
   m_SourcePrefab: {fileID: 100100000, guid: 8f5999c372e6bec40ae5c1c21f7c31f1, type: 3}
+--- !u!4 &2227030317881217762 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8350311113758439654, guid: 8f5999c372e6bec40ae5c1c21f7c31f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 7857167202448091652}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2343339273313429690 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5588814675972522686, guid: 8f5999c372e6bec40ae5c1c21f7c31f1,
@@ -48976,3 +48991,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e6cac1b9e65cf34f9b87b4b0fd34057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2555886898823855978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9134338692451780019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d29bd7d46d87014fba2978d5f53a839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  raycastOrigin: {fileID: 2227030317881217762}
+  raycastDistance: 10
+  rayColor: {r: 1, g: 0, b: 0, a: 1}
