@@ -26,12 +26,15 @@ public class NPC : MonoBehaviour
         // NPC'nin karakterin konumuna doğru ilerlemesini sağla
         transform.position = Vector3.MoveTowards(npcKonumu, hedefKonum, hareketHizi * Time.deltaTime);
 
+        // NPC'nin hedef nesneye doğru bakmasını sağla
+        transform.LookAt(hedefKonum);
+
         Anim();
     }
 
     private void Anim()
     {
-        if (hareketHizi==3f) 
+        if (hareketHizi == 3f) 
         {
             _anim.SetBool("Run", true);
             Debug.Log("Koşuyorrrrrrrrr");
