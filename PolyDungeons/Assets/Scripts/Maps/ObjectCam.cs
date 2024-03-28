@@ -22,7 +22,7 @@ public class ObjectCam : MonoBehaviour
             //raycast görünürlük
             Vector3 rayOrigin = transform.position;
             Vector3 rayDirection = transform.forward;
-            float rayDistance = 20f;
+            float rayDistance = 10f;
             if (Physics.Raycast(rayOrigin, rayDirection, out hit, rayDistance))
             {
                 // Çarpýþma olduðunda çizgiyi çiz
