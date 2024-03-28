@@ -6,15 +6,20 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public float maxHealth;
-    float currentHealth;
-
+    public float currentHealth;
     public Image healthBar;
+
+    public float maxMana;
+    public float currentMana;
+    public Image manaBar;
 
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
+        currentMana = maxMana;
+          
     }
 
     // Update is called once per frame
@@ -25,6 +30,12 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = maxHealth;
         }
         healthBar.fillAmount = currentHealth / 100;
+
+        if (currentMana >= maxMana)
+        {
+            currentMana = maxMana;
+        }
+        manaBar.fillAmount = currentMana / 100;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,6 +51,7 @@ public class PlayerHealth : MonoBehaviour
 
         }
     }
+
 
 
     //sürekli hasar alma
