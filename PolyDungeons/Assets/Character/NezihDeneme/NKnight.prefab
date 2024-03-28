@@ -453,9 +453,11 @@ GameObject:
   - component: {fileID: 3555427400670068299}
   - component: {fileID: 8371076047718118040}
   - component: {fileID: 5500225494332108681}
+  - component: {fileID: 7195469280272381609}
+  - component: {fileID: 6363357257255239289}
   m_Layer: 0
   m_Name: NKnight
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -590,6 +592,43 @@ MonoBehaviour:
   raycastOrigin: {fileID: 0}
   raycastDistance: 10
   rayColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!136 &7195469280272381609
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425938299535847351}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.67704344
+  m_Height: 2.9074686
+  m_Direction: 1
+  m_Center: {x: 0.031978607, y: 0.9537343, z: 0.078701496}
+--- !u!114 &6363357257255239289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425938299535847351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d824cbea7377d144babbe39624d85fa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  healthBar: {fileID: 0}
 --- !u!1 &1457458615349977103
 GameObject:
   m_ObjectHideFlags: 0
