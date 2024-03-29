@@ -6,13 +6,15 @@ public class Skills : MonoBehaviour
 {
     private Animator _anim;
     [Header ("Buttons")]
-    public GameObject Buton;
-    public GameObject Buton2;
-    public GameObject Buton3;
+    [SerializeField] private GameObject FireBallButton;
+    [SerializeField] private GameObject GarenButton;
+    [SerializeField] private GameObject SwordRainButton;
+    [SerializeField] private GameObject AttackButton;
+
 
     [Header("Vfx")]
-    public ParticleSystem fireBall;
-    public GameObject swordRain;
+    [SerializeField] private ParticleSystem fireBall;
+    [SerializeField] private GameObject swordRain;
     
     Movement movement;
 
@@ -31,9 +33,10 @@ public class Skills : MonoBehaviour
         swordRain.SetActive(false);
 
 
-        Buton.SetActive(true);
-        Buton2.SetActive(true);
-        Buton3.SetActive(true);
+        FireBallButton.SetActive(true);
+        GarenButton.SetActive(true);
+        SwordRainButton.SetActive(true);
+        AttackButton.SetActive(true);
 
         StartCoroutine(Waittttt());
     }
@@ -43,11 +46,21 @@ public class Skills : MonoBehaviour
     {
        
     }
+    public void Attack()
+    {
+        _anim.SetTrigger("Attack");
+        movement.playerSpeed = 0;
+        
+
+        StartCoroutine(Waittttt());
+        StartCoroutine(CharacterFireWait());
+        AttackButton.SetActive(false);
+    }
     public void GarenE()
     {
             _anim.SetTrigger("GarenE");
             StartCoroutine(Waittttt());
-            Buton2.SetActive(false);
+            GarenButton.SetActive(false);
     }
 
     public void FireBall() 
@@ -60,7 +73,7 @@ public class Skills : MonoBehaviour
         StartCoroutine(Waittttt());
         StartCoroutine(CharacterFireWait());
 
-        Buton.SetActive(false);
+        FireBallButton.SetActive(false);
 
     }
     public void SwordRain ()
@@ -70,7 +83,7 @@ public class Skills : MonoBehaviour
 
         movement.playerSpeed = 0;
 
-        Buton3.SetActive(false);
+        SwordRainButton.SetActive(false);
         StartCoroutine(Waittttt());
         StartCoroutine(CharacterSwordWait());
         swordRain.SetActive(true);
@@ -82,11 +95,11 @@ public class Skills : MonoBehaviour
         swordRain.SetActive(false);
         yield return new WaitForSecondsRealtime(3f);
 
-        Buton.SetActive(true);
-        Buton2.SetActive(true);
-        Buton3 .SetActive(true);
-       
-
+        FireBallButton.SetActive(true);
+        GarenButton.SetActive(true);
+        SwordRainButton.SetActive(true);
+        AttackButton.SetActive(true);
+      
 
         Debug.Log("çalýþýyorr");
  
