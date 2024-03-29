@@ -11,6 +11,10 @@ public class Skills : MonoBehaviour
     [SerializeField] private GameObject SwordRainButton;
     [SerializeField] private GameObject AttackButton;
 
+    public GameObject GarenPassiveButton;
+    public GameObject SwordRainPassiveButton;
+    public GameObject FireBallPassiveButton;
+
 
     [Header("Vfx")]
     [SerializeField] private ParticleSystem fireBall;
@@ -61,6 +65,7 @@ public class Skills : MonoBehaviour
             _anim.SetTrigger("GarenE");
             StartCoroutine(Waittttt());
             GarenButton.SetActive(false);
+            GarenPassiveButton.SetActive(true);
     }
 
     public void FireBall() 
@@ -74,20 +79,20 @@ public class Skills : MonoBehaviour
         StartCoroutine(CharacterFireWait());
 
         FireBallButton.SetActive(false);
+        FireBallPassiveButton.SetActive(true);
 
     }
     public void SwordRain ()
     {
         _anim.SetTrigger("SwordRain");
         
-
         movement.playerSpeed = 0;
 
         SwordRainButton.SetActive(false);
+        SwordRainPassiveButton.SetActive(true);
         StartCoroutine(Waittttt());
         StartCoroutine(CharacterSwordWait());
         swordRain.SetActive(true);
-        
     }
 
     IEnumerator Waittttt() 
@@ -101,7 +106,7 @@ public class Skills : MonoBehaviour
         AttackButton.SetActive(true);
       
 
-        Debug.Log("çalýþýyorr");
+        Debug.Log("ï¿½alï¿½ï¿½ï¿½yorr");
  
     }
     IEnumerator CharacterFireWait()
