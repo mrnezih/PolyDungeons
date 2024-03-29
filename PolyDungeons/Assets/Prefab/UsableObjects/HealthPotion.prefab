@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &5723809174384205885
+--- !u!1001 &205143867657095029
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,57 +8,57 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 56face809c383b14b822d52209598b98,
+    - target: {fileID: -8679921383154817045, guid: d620d847fffe41840bc0b7745dbfaab3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.94
+      value: 0.073628426
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56face809c383b14b822d52209598b98,
+    - target: {fileID: -8679921383154817045, guid: d620d847fffe41840bc0b7745dbfaab3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.894
+      value: 0.057633467
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56face809c383b14b822d52209598b98,
+    - target: {fileID: -8679921383154817045, guid: d620d847fffe41840bc0b7745dbfaab3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.605
+      value: -2.466
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56face809c383b14b822d52209598b98,
+    - target: {fileID: -8679921383154817045, guid: d620d847fffe41840bc0b7745dbfaab3,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56face809c383b14b822d52209598b98,
+    - target: {fileID: -8679921383154817045, guid: d620d847fffe41840bc0b7745dbfaab3,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56face809c383b14b822d52209598b98,
+    - target: {fileID: -8679921383154817045, guid: d620d847fffe41840bc0b7745dbfaab3,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56face809c383b14b822d52209598b98,
+    - target: {fileID: -8679921383154817045, guid: d620d847fffe41840bc0b7745dbfaab3,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56face809c383b14b822d52209598b98,
+    - target: {fileID: -8679921383154817045, guid: d620d847fffe41840bc0b7745dbfaab3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56face809c383b14b822d52209598b98,
+    - target: {fileID: -8679921383154817045, guid: d620d847fffe41840bc0b7745dbfaab3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56face809c383b14b822d52209598b98,
+    - target: {fileID: -8679921383154817045, guid: d620d847fffe41840bc0b7745dbfaab3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 56face809c383b14b822d52209598b98,
+    - target: {fileID: 919132149155446097, guid: d620d847fffe41840bc0b7745dbfaab3,
         type: 3}
       propertyPath: m_Name
       value: HealthPotion
@@ -67,41 +67,28 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 56face809c383b14b822d52209598b98,
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d620d847fffe41840bc0b7745dbfaab3,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5304414499201772850}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 56face809c383b14b822d52209598b98,
+      addedObject: {fileID: 2063514987734679234}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d620d847fffe41840bc0b7745dbfaab3,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7615222406048896916}
-  m_SourcePrefab: {fileID: 100100000, guid: 56face809c383b14b822d52209598b98, type: 3}
---- !u!1 &4876949588957191532 stripped
+      addedObject: {fileID: 2688919281413943039}
+  m_SourcePrefab: {fileID: 100100000, guid: d620d847fffe41840bc0b7745dbfaab3, type: 3}
+--- !u!1 &1016046133983590948 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 56face809c383b14b822d52209598b98,
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d620d847fffe41840bc0b7745dbfaab3,
     type: 3}
-  m_PrefabInstance: {fileID: 5723809174384205885}
+  m_PrefabInstance: {fileID: 205143867657095029}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5304414499201772850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4876949588957191532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 220ce2b820887404290da06a9a428937, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthToGive: 20
---- !u!65 &7615222406048896916
+--- !u!65 &2063514987734679234
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4876949588957191532}
+  m_GameObject: {fileID: 1016046133983590948}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -116,3 +103,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.79026484, y: 0.86251104, z: 0.7478178}
   m_Center: {x: -0.014441133, y: 0.4356286, z: 0.0049737394}
+--- !u!114 &2688919281413943039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016046133983590948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220ce2b820887404290da06a9a428937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthToGive: 20
