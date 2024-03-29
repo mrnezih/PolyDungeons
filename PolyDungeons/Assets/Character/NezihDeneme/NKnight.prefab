@@ -455,6 +455,7 @@ GameObject:
   - component: {fileID: 5500225494332108681}
   - component: {fileID: 7195469280272381609}
   - component: {fileID: 6363357257255239289}
+  - component: {fileID: 3501868019653886267}
   m_Layer: 0
   m_Name: NKnight
   m_TagString: Player
@@ -557,9 +558,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22a2e4b868a5854498962271c33053d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Buton: {fileID: 0}
-  Buton2: {fileID: 0}
-  Buton3: {fileID: 0}
+  FireBallButton: {fileID: 0}
+  GarenButton: {fileID: 0}
+  SwordRainButton: {fileID: 0}
+  AttackButton: {fileID: 0}
   fireBall: {fileID: 3159796148968270696}
   swordRain: {fileID: 0}
 --- !u!114 &8371076047718118040
@@ -633,6 +635,23 @@ MonoBehaviour:
   maxMana: 100
   currentMana: 0
   manaBar: {fileID: 0}
+--- !u!114 &3501868019653886267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425938299535847351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30bd7b28d4de1fb4280d73a61ec584c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  expImg: {fileID: 0}
+  levelText: {fileID: 0}
+  currentLevel: 0
+  currentExp: 0
+  expToNextLevel: 100
 --- !u!1 &1457458615349977103
 GameObject:
   m_ObjectHideFlags: 0
