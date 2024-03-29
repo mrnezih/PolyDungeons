@@ -6,11 +6,23 @@ public class ManaPotion : MonoBehaviour
 {
     public float manaToGive;
 
+    GameManagerTwo gameManager;
+    PotionInventory inventory;
+
+    public GameObject itemToAdd;
+    public int itemAmount;
+
+    void Start()
+    {
+        gameManager = GameManagerTwo.instance;
+        inventory = gameManager.GetComponent<PotionInventory>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerHealth>().currentMana += manaToGive;
+            inventory.CheckSlotsAvailableity(itemToAdd, itemToAdd.name, itemAmount);
             Destroy(gameObject);
         }
     }
