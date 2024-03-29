@@ -7,12 +7,27 @@ public class HealthPotion : MonoBehaviour
 
     public float healthToGive;
 
+    GameManagerTwo gameManager;
+    PotionInventory inventory;
+
+    public GameObject itemToAdd;
+    public int itemAmount;
+
+    void Start()
+    {
+        gameManager = GameManagerTwo.instance;
+        inventory = gameManager.GetComponent<PotionInventory>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerHealth>().currentHealth += healthToGive;
+            inventory.CheckSlotsAvailableity(itemToAdd, itemToAdd.name, itemAmount);
+            //other.GetComponent<PlayerHealth>().currentHealth += healthToGive;
             Destroy(gameObject);
         }
     }
+
+    
 }

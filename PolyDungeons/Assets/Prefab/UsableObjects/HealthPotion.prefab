@@ -116,3 +116,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthToGive: 20
+  itemToAdd: {fileID: 8757932265238275637, guid: d86ff949e5a6d8c42b9cf590e0589546,
+    type: 3}
+  itemAmount: 1

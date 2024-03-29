@@ -115,4 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a6e5623af442c0488c6b7660e99025c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manaToGive: 0
+  manaToGive: 20
+  itemToAdd: {fileID: 4378455579405439624, guid: b01179893c6edc945b48a9f2d4f150d7,
+    type: 3}
+  itemAmount: 1
