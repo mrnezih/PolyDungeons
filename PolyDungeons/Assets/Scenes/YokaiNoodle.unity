@@ -4017,6 +4017,36 @@ PrefabInstance:
       propertyPath: Buton3
       value: 
       objectReference: {fileID: 1921313908}
+    - target: {fileID: 3555427400670068299, guid: d9d4e8a686cdc3e42a4ce72580d10f76,
+        type: 3}
+      propertyPath: GarenButton
+      value: 
+      objectReference: {fileID: 314866021}
+    - target: {fileID: 3555427400670068299, guid: d9d4e8a686cdc3e42a4ce72580d10f76,
+        type: 3}
+      propertyPath: FireBallButton
+      value: 
+      objectReference: {fileID: 1961256613}
+    - target: {fileID: 3555427400670068299, guid: d9d4e8a686cdc3e42a4ce72580d10f76,
+        type: 3}
+      propertyPath: SwordRainButton
+      value: 
+      objectReference: {fileID: 2130587661}
+    - target: {fileID: 3555427400670068299, guid: d9d4e8a686cdc3e42a4ce72580d10f76,
+        type: 3}
+      propertyPath: GarenPassiveButton
+      value: 
+      objectReference: {fileID: 1016831811}
+    - target: {fileID: 3555427400670068299, guid: d9d4e8a686cdc3e42a4ce72580d10f76,
+        type: 3}
+      propertyPath: FireBallPassiveButton
+      value: 
+      objectReference: {fileID: 350720765}
+    - target: {fileID: 3555427400670068299, guid: d9d4e8a686cdc3e42a4ce72580d10f76,
+        type: 3}
+      propertyPath: SwordRainPassiveButton
+      value: 
+      objectReference: {fileID: 114949916}
     - target: {fileID: 5500225494332108681, guid: d9d4e8a686cdc3e42a4ce72580d10f76,
         type: 3}
       propertyPath: raycastOrigin
