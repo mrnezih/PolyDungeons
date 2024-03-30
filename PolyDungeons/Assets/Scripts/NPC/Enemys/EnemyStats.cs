@@ -7,16 +7,14 @@ using UnityEngine.UI;
 public class EnemyStats : MonoBehaviour
 {
     public float maxHealth;
-    public float curreHealth;
-
+    public float currentHealth;
     public float damage;
-
     public float expToGive;
 
 
     void Start()
     {
-        curreHealth = maxHealth;
+        currentHealth = maxHealth;
     }
 
     
@@ -27,11 +25,12 @@ public class EnemyStats : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        if(curreHealth <=0)
-        { 
-            curreHealth=0;
+        currentHealth -= damage;
+        if (currentHealth <= 0) 
+        {
+            currentHealth = 0;
             Destroy(gameObject);
-            Experience.instance.expMod(expToGive);
         }
+       
     }
 }
