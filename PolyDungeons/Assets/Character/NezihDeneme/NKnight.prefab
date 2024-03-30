@@ -457,6 +457,7 @@ GameObject:
   - component: {fileID: 6363357257255239289}
   - component: {fileID: 3501868019653886267}
   - component: {fileID: 9105302021749664457}
+  - component: {fileID: 8395734676899066287}
   m_Layer: 3
   m_Name: NKnight
   m_TagString: Player
@@ -681,6 +682,22 @@ MonoBehaviour:
   bigAttackDistance: 2.3
   damage: 20
   bigDamage: 50
+--- !u!114 &8395734676899066287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425938299535847351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f39812af133824eaa20038b61895fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponDmg: 0
+  damageText: {fileID: 32587668997538318, guid: 9b251434031278c4fa17c6eb73f00a7f,
+    type: 3}
+  mainCamera: {fileID: 0}
 --- !u!1 &1457458615349977103
 GameObject:
   m_ObjectHideFlags: 0
