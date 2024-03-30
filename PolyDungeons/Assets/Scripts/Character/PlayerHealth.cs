@@ -66,16 +66,16 @@ public class PlayerHealth : MonoBehaviour
 
     //sürekli hasar alma
 
-    // private void OnTriggerStay(Collider other)
-    //{
-    //    if (other.CompareTag("Traps"))
-    //    {
-    //       currentHealth -= other.GetComponent<ThornTrap>().damage;
-    //       if (currentHealth <= 0)
-    //        {
-    //            currentHealth = 0;
-    //            Destroy(gameObject);
-    //       }
-    //   }
-    // }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Traps"))
+        {
+           currentHealth -= other.GetComponent<ThornTrap>().damage;
+           if (currentHealth <= 0)
+           {
+                currentHealth = 0;
+                Destroy(gameObject);
+           }
+       }
+     }
 }

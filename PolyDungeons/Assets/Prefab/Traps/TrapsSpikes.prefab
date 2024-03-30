@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a8de7c18a040d2d408a75d9c58c58d9b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.3229046
+      value: 17.73
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a8de7c18a040d2d408a75d9c58c58d9b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.02
+      value: 17.19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a8de7c18a040d2d408a75d9c58c58d9b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.25
+      value: -36.83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a8de7c18a040d2d408a75d9c58c58d9b,
         type: 3}
@@ -36,7 +36,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a8de7c18a040d2d408a75d9c58c58d9b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a8de7c18a040d2d408a75d9c58c58d9b,
         type: 3}
@@ -58,10 +58,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7139261109480557378, guid: a8de7c18a040d2d408a75d9c58c58d9b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a8de7c18a040d2d408a75d9c58c58d9b,
         type: 3}
       propertyPath: m_Name
       value: TrapsSpikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a8de7c18a040d2d408a75d9c58c58d9b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a8de7c18a040d2d408a75d9c58c58d9b,
         type: 3}
@@ -100,7 +110,7 @@ BoxCollider:
     m_Bits: 8
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -120,4 +130,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13240a77a9ef49b49ad33c475e20d920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 0.05
