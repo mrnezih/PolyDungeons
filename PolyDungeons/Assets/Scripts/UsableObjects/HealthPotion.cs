@@ -5,13 +5,24 @@ using UnityEngine;
 public class HealthPotion : MonoBehaviour
 {
 
-    //public float healthToGive;
+    public float healthToGive;
 
     GameManagerTwo gameManager;
     PotionInventory inventory;
 
     public GameObject itemToAdd;
     public int itemAmount;
+
+
+    public static HealthPotion instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
 
     void Start()
     {
