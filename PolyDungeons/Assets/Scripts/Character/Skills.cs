@@ -52,13 +52,13 @@ public class Skills : MonoBehaviour
     }
     public void Attack()
     {
-        _anim.SetTrigger("Attack");
+        _anim.SetTrigger("Attack1");
         movement.playerSpeed = 0;
         
 
         StartCoroutine(Waittttt());
         StartCoroutine(CharacterFireWait());
-        AttackButton.SetActive(false);
+    
     }
     public void GarenE()
     {
@@ -67,7 +67,6 @@ public class Skills : MonoBehaviour
             GarenButton.SetActive(false);
             GarenPassiveButton.SetActive(true);
     }
-
     public void FireBall() 
     {
          
