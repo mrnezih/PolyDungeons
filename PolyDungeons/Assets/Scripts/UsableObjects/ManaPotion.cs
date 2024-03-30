@@ -12,6 +12,18 @@ public class ManaPotion : MonoBehaviour
     public GameObject itemToAdd;
     public int itemAmount;
 
+
+    public static ManaPotion instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
+
     void Start()
     {
         gameManager = GameManagerTwo.instance;

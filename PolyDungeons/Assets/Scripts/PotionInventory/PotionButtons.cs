@@ -15,6 +15,18 @@ public class PotionButtons : MonoBehaviour
 
     public void UseItem()
     {
+
+        if (gameObject.name == "HealthPotion") // Eðer eþyanýn adý "HealthPotion" ise
+        {
+            PlayerHealth.instance.currentHealth += HealthPotion.instance.healthToGive;
+        }
+
+        if (gameObject.name == "ManaPotion") // Eðer eþyanýn adý "HealthPotion" ise
+        {
+            PlayerHealth.instance.currentMana += ManaPotion.instance.manaToGive;
+        }
+
+
         inventory.UsePotionInventoryItems(gameObject.name);
         
     }
