@@ -68,37 +68,34 @@ public class PotionInventory : MonoBehaviour
 
     public void UsePotionInventoryItems(string itemName)
     {
-        
 
-        for (int i = 0; i < slots.Length; i++) 
+
+        for (int i = 0; i < slots.Length; i++)
         {
             if (!slots[i].GetComponent<PotionSlots>().isUsed)
             {
+
                 continue;
+
             }
 
-            if (slots[i].transform.GetChild(0).gameObject.name ==itemName)
+            if (slots[i].transform.GetChild(0).gameObject.name == itemName)
             {
                 inventoryItems[itemName]--;
                 amountText = slots[i].GetComponentInChildren<TextMeshProUGUI>();
                 amountText.text = inventoryItems[itemName].ToString();
 
 
-                if (inventoryItems[itemName] <=0)
+
+                if (inventoryItems[itemName] <= 0)
                 {
                     Destroy(slots[i].transform.GetChild(0).gameObject);
                     slots[i].GetComponent<PotionSlots>().isUsed = false;
                     inventoryItems.Remove(itemName);
-                    
+
                 }
                 break;
             }
         }
-
-        
     }
-
-   
-
-                    
-}
+  }
