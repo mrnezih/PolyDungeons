@@ -10,7 +10,7 @@ public class Experience : MonoBehaviour
     public Text levelText;
     public int currentLevel;
 
-    [HideInInspector]
+    //[HideInInspector]
     public float currentExp;
     public float expToNextLevel;
 
@@ -35,6 +35,7 @@ public class Experience : MonoBehaviour
     void Update()
     {
         expImg.fillAmount = currentExp / expToNextLevel;
+        levelText.text = currentLevel.ToString();
     }
 
     public void expMod(float experience)
@@ -47,6 +48,10 @@ public class Experience : MonoBehaviour
             currentExp = 0;
             currentLevel++;
             levelText.text = currentLevel.ToString();
+            PlayerHealth.instance.maxHealth += 20;
+            PlayerHealth.instance.currentHealth += 20;
+
+
         }
     }
 }

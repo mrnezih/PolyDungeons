@@ -9,12 +9,23 @@ public class PlayerHealth : MonoBehaviour
     public float currentHealth;
     public Image healthBar;
 
+
+
     public float maxMana;
     public float currentMana;
     public Image manaBar;
 
 
-    // Start is called before the first frame update
+    public static PlayerHealth instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -22,20 +33,19 @@ public class PlayerHealth : MonoBehaviour
           
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (currentHealth >= maxHealth) 
         {
             currentHealth = maxHealth;
         }
-        healthBar.fillAmount = currentHealth / 100;
+        healthBar.fillAmount = currentHealth / maxHealth;
 
         if (currentMana >= maxMana)
         {
             currentMana = maxMana;
         }
-        manaBar.fillAmount = currentMana / 100;
+        manaBar.fillAmount = currentMana / maxMana;
     }
 
     private void OnTriggerEnter(Collider other)

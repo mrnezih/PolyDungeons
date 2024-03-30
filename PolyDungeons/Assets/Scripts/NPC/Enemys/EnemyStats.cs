@@ -13,6 +13,7 @@ public class EnemyStats : MonoBehaviour
     public float expToGive;
     public float deathTime;
     Animator anim;
+    public Image healthBar;
 
     Rigidbody rb;
     public float knockBackForceX, knockBackForceY;
@@ -27,7 +28,11 @@ public class EnemyStats : MonoBehaviour
     
     void Update()
     {
-        
+        if (currentHealth >= maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        healthBar.fillAmount = currentHealth / 100;
     }
 
     public void TakeDamage(float damage)
@@ -40,6 +45,8 @@ public class EnemyStats : MonoBehaviour
             currentHealth = 0;
             anim.SetTrigger("Death");
             Destroy(gameObject, deathTime);
+            Experience.instance.expMod(expToGive);
+           
         }
        
     }

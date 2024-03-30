@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthPotion : MonoBehaviour
 {
 
-    public float healthToGive;
+    //public float healthToGive;
 
     GameManagerTwo gameManager;
     PotionInventory inventory;
