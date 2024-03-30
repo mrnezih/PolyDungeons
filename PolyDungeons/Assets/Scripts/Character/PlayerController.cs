@@ -23,9 +23,12 @@ public class PlayerController : MonoBehaviour
     public float damage;
     public float bigDamage;
 
+    WeaponStats weaponStats;
+
 
     void Start()
     {
+        weaponStats = GetComponent<WeaponStats>();
         movement = GetComponent<Movement>();
         _anim = GetComponent<Animator>();
         AttackButton.SetActive(true);
@@ -64,7 +67,7 @@ public class PlayerController : MonoBehaviour
                 EnemyStats enemyStats = enemy.GetComponent<EnemyStats>();
                 if (enemyStats != null)
                 {
-                    enemyStats.TakeDamage(damage);
+                    enemyStats.TakeDamage(weaponStats.DamageInput());
                 }
             }
         }
@@ -79,7 +82,7 @@ public class PlayerController : MonoBehaviour
                 EnemyStats enemyStats = enemy.GetComponent<EnemyStats>();
                 if (enemyStats != null)
                 {
-                    enemyStats.TakeDamage(damage);
+                    enemyStats.TakeDamage(weaponStats.DamageInput());
                 }
             }
 
